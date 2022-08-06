@@ -11,38 +11,37 @@
 <body>
 
 
-    <div class="align" >
-<h2>   <label class="Choose">Choose A Value </label><br>
+    <div class="align">
+        <h2> <label class="Choose">Choose A Value </label><br>
 
-  <div class="custom_select"> 
-    <select id="filterjson" class=" Filter_data">
-       <option value="firstname" id="Name">Name</option>
-        <option value="age">Age </option>
-        <option value="nationality">Nationality</option>
-        <option value="gender">Gender</option>
-        <option value="hobbie">Hobbies</option>
+            <div class="custom_select">
+                <select id="filterjson" class=" Filter_data">
+                    <option value="firstname" id="Name">Name</option>
+                    <option value="age">Age </option>
+                    <option value="nationality">Nationality</option>
+                    <option value="gender">Gender</option>
+                    <option value="hobbie">Hobbies</option>
+            </div>
+
+            </select>
+
+
+
+            <div class="search">
+
+
+                <input type="search" name="" id="mySearch" class="searchTerm " placeholder="Search Here...">
+            </div>
+
+            <input type="button" id="button" class="btn" value="Submit">
+
     </div>
-
-    </select>
-
-
-
-    <div class="search" >
-
-    
-    <input type="search"name="" id="mySearch"   class ="searchTerm " placeholder="Search Here...">
-</div>
-
-    <br><br>
-    <input type="button"    class="btn"  value="Submit" onclick="search()"  >
-
-</div>
-</div>
+    </div>
     <div id="filtered"></div>
     <!-- Card is created -->
 
-    <div id="all_cards">
-        
+    <div id="all_cards" class="card-wrapper">
+
     </div>
 </body>
 <footer>
