@@ -64,7 +64,7 @@ function search() {
   for (var i = 0; i < persons.length; i++) {
     for (var key = 0; key < persons[i].hobbie.length; key++) {
 
-      if (persons[i].hobbie[key] == x) {
+      if (persons[i].hobbie[key].toLowerCase() == x.toLowerCase()) {
         console.log(persons[i].hobbie[key])
         render_data.innerHTML += `<br>
         <div class="card">
