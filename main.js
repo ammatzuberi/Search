@@ -3,7 +3,7 @@ persons = [
     id: 325326,
     firstname: "Dan",
     lastname: "Tiger",
-    image: src = "https://i.pinimg.com/236x/ff/e5/c7/ffe5c7867c2b9529b62a529ffcc567aa--mens-suits-gorgeous-men.jpg",
+    image: src = "https://i.pinimg.com/originals/0f/0c/d7/0f0cd73dc7f30831cea0d5e0f64bca7e.jpg",
     age: 21,
     gender: "Male",
     hobbie: ["Football", "Reading"],
@@ -13,7 +13,7 @@ persons = [
     id: 325326,
     firstname: "Fan",
     lastname: "Tiger",
-    image: src = "https://i.pinimg.com/236x/de/48/ba/de48ba806e40c99022972656808dd956.jpg",
+    image: src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSMw_Xx5dO6Ms_AfZTaTDdCCudCrL_WYiMOQ&usqp=CAU",
     age: 30,
     gender: "Male",
     hobbie: ["Football", "Reading"],
@@ -42,6 +42,8 @@ persons = [
 
 ]
 
+const element = document.getElementById("button");
+element.addEventListener("click", search);
 
 
 // console.log(persons[3].hobbie[0])
@@ -56,30 +58,28 @@ function search() {
   //  document.getElementById('returnvalue').innerHTML= alert(x +"Data NOT Found Please Entre Correct Value")
 
   let data_all = persons.filter(item =>
-     item[y].toString().toLowerCase() == x.toString().toLowerCase()
-  
-     );
+    item[y].toString().toLowerCase() == x.toString().toLowerCase()
+
+  );
   let render_data = document.getElementById('all_cards');
-    
+  render_data.innerHTML=" ";
+
   for (var i = 0; i < persons.length; i++) {
     for (var key = 0; key < persons[i].hobbie.length; key++) {
 
       if (persons[i].hobbie[key].toLowerCase() == x.toLowerCase()) {
         console.log(persons[i].hobbie[key])
-        render_data.innerHTML += `<br>
-        <div class="card">
+        render_data.innerHTML += `
+        <div class="card" >
   
           <div class="container">
-       
-     
-      
               <img class ="image" src= ${persons[i].image}>
+              <div class=" text">
               <h4> ${persons[i].firstname} ${persons[i].lastname}</h4>
               <p>  ${persons[i].age}</p>
               <p>  ${persons[i].gender}</p>
               <p> ${persons[i].nationality}</p>
-           
-              
+           </div>
           </div>
       </div>
       `
@@ -109,12 +109,13 @@ function search() {
     
             <div class="container">
             <img class ="image" src= ${data_all[index].image}>
-       
+       <div class=" text">
                 <h4> ${data_all[index].firstname} ${data_all[index].lastname}</h4>
                 <p>${data_all[index].age}</p>
 
                 <p> ${data_all[index].nationality}</p>
                 <p>${data_all[index].gender}</p>
+                </div>
           
             </div>
         </div>
