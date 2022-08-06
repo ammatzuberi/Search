@@ -1,0 +1,43 @@
+ [
+    {
+      "id": 325326,
+      "firstname": "Dan",
+      "lastname:" :"Tiger",
+    " image" :"url",
+      "age": 21,
+      "gender" : "Male",
+     " hobbie ": ["Football", "Reading"],
+      "nationality ": "switzerland"
+    },
+    {
+      "id": 325326,
+      "firstname": "Fan",
+      "lastname:": "Tiger",
+      " image" :"url",
+      "age": 30,
+      "gender" : "Male",
+      " hobbie ": ["Football", "Reading"],
+      "nationality ": "america"
+    },
+    {
+      "id":  325330,
+      "firstname" :"Frank",
+      "lastname:": "Lion",
+      " image" : "url",
+      "age":43,
+      "gender" : "male",
+      " hobbie ": ["walking", "basketball"],
+      "nationality ": "germani"
+    },
+    {
+      "id": 325334,
+      "firstname" : "Bilal",
+      "lastname:": "Zakki",
+      " image" :  "url",
+      "age": 15,
+      "gender" : "male",
+      " hobbie ": ["swimming", "walking"],
+      "nationality ": "pakistan"
+    }
+]
+
